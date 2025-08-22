@@ -6,13 +6,6 @@ scipy==1.11.4
 scikit-learn==1.4.0
 statsmodels==0.14.1
 xgboost==2.0.3
-pmdarima==2.0.4
-tensorflow==2.15.0
-marplotlib==3.8.3
-seaborn==0.13.1
-openpyxl==3.1.2
-xlrd==2.0.1
-pyngrok==7.0.0
 
 
 
