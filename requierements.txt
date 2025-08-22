@@ -1,0 +1,10 @@
+pip install streamlit 
+pip install pandas 
+pip install numpy 
+pip install plotly 
+pip install scipy 
+pip install pyngrok
+pip install statsmodels
+pip install pmdarima
+pip install scikit-learn
+pip install tensorflow
