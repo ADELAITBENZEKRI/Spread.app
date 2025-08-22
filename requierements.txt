@@ -1,10 +1,8 @@
-pip install streamlit 
-pip install pandas 
-pip install numpy 
-pip install plotly 
-pip install scipy 
-pip install pyngrok
-pip install statsmodels
-pip install pmdarima
-pip install scikit-learn
-pip install tensorflow
+streamlit==1.32.0
+pandas==2.1.4
+numpy==1.26.4
+plotly==5.18.0
+scipy==1.11.4
+scikit-learn==1.4.0
+statsmodels==0.14.1
+xgboost==2.0.3
