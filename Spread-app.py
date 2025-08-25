@@ -23,7 +23,27 @@ from sklearn.ensemble import GradientBoostingRegressor
 from xgboost import XGBRegressor
 from plotly.subplots import make_subplots
 ###
+# Configuration du mot de passe
+CORRECT_PASSWORD = "1234"
 
+# Vérifier si l'utilisateur est déjà authentifié
+if "authenticated" not in st.session_state:
+    st.session_state.authenticated = False
+
+# Si non authentifié, afficher le formulaire de connexion
+if not st.session_state.authenticated:
+    st.title("🔐 Connexion Requise")
+    
+    password = st.text_input("Mot de passe:", type="password")
+    
+    if st.button("Se connecter"):
+        if password == CORRECT_PASSWORD:
+            st.session_state.authenticated = True
+            st.rerun()
+        else:
+            st.error("Mot de passe incorrect")
+    
+    st.stop()
 #######
 # Configuration de la page
 st.set_page_config(page_title="Analyse des Spreads Obligataires Maroc", layout="wide")
@@ -2038,5 +2058,6 @@ if st.session_state.sector_added:
 else:
 
     st.info("Veuillez compléter toutes les étapes de traitement des données pour accéder à l'analyse.")   
+
 
 
