@@ -242,7 +242,7 @@ def add_sector_classification():
         st.error(f"Erreur lors de la classification sectorielle : {str(e)}")
         return False
 #######image###########        
-st.sidebar.image("/content/logo ALBARID.png", width=300)
+# st.sidebar.image("/content/logo ALBARID.png", width=300)
 # Bouton pour ouvrir le panneau des abréviations
 if st.sidebar.button("📚 Afficher les abréviations"):
     st.session_state.show_abbreviations = not st.session_state.show_abbreviations
@@ -2036,4 +2036,5 @@ if st.session_state.sector_added:
     st.sidebar.metric("Spread médian (points)", f"{filtered_data['SPREAD_POINTS'].median():.1f}" if not filtered_data.empty else "N/A")
 
 else:
+
     st.info("Veuillez compléter toutes les étapes de traitement des données pour accéder à l'analyse.")   
