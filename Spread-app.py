@@ -24,7 +24,7 @@ from xgboost import XGBRegressor
 from plotly.subplots import make_subplots
 ###
 # Configuration du mot de passe
-CORRECT_PASSWORD = "1234"
+CORRECT_PASSWORD = "1975"
 
 # Vérifier si l'utilisateur est déjà authentifié
 if "authenticated" not in st.session_state:
@@ -2058,6 +2058,7 @@ if st.session_state.sector_added:
 else:
 
     st.info("Veuillez compléter toutes les étapes de traitement des données pour accéder à l'analyse.")   
+
 
 
 
